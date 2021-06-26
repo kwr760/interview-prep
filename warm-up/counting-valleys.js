@@ -1,4 +1,4 @@
-const numberOfValleys = (trip) => {
+const countingValleys = (trip) => {
   let valleys = 0;
   let altitude = 0;
   const tripArray = trip.split('');
@@ -28,5 +28,5 @@ const trips = [
 ];
 trips.map(trip => {
   console.log(trip);
-  console.log(numberOfValleys(trip));
+  console.log(countingValleys(trip));
 });

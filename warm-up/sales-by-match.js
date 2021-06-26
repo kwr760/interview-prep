@@ -1,4 +1,4 @@
-const numberOfPairs = (sockPile) => {
+const salesByMatch = (sockPile) => {
 	let totalPairs = 0;
 	const sockArray = new Map();
 
@@ -22,4 +22,4 @@ const numberOfPairs = (sockPile) => {
 
 const socks = [1, 2, 1, 2, 'a', 1, 3, 2, 'a'];
 
-console.log(numberOfPairs(socks));
+console.log(salesByMatch(socks));
