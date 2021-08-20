@@ -33,15 +33,15 @@ function insertNodeAtPosition(llist, data, position) {
   }
 
   let pos = position;
-  let head = llist;
+  let current = llist;
   let prev;
-  while (pos-- && head.next) {
-    prev = head;
-    head = head.next;
+  while (pos-- && current.next) {
+    prev = current;
+    current = current.next;
   }
 
   prev.next = node;
-  node.next = head;
+  node.next = current;
 
   return llist;
 }

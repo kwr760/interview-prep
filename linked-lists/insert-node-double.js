@@ -35,19 +35,19 @@ function printDoublyLinkedList(node) {
 
 function sortedInsert(llist, data) {
   const node = new DoublyLinkedListNode(data);
-  let head = llist;
-  if (data < head.data) {
-    node.next = head;
-    head.prev = node;
+  let current = llist;
+  if (data < current.data) {
+    node.next = current;
+    current.prev = node;
     return node;
   }
   let prev;
-  while (head !== null && data > head.data) {
-    prev = head;
-    head = head.next;
+  while (current !== null && data > current.data) {
+    prev = current;
+    current = current.next;
   }
   prev.next = node;
-  node.next = head;
+  node.next = current;
   return llist;
 }
 

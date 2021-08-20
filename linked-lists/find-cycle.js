@@ -23,21 +23,21 @@ const SinglyLinkedList = class {
 };
 
 function findCycle(list) {
-  let head = list;
+  let current = list;
 
-  if (head === null) {
+  if (current === null) {
     return 0;
   }
-  let next = head.next;
+  let next = current.next;
   if (next === null) {
     return 0;
   }
 
-  while (head && next) {
-    if (head === next) {
+  while (current && next) {
+    if (current === next) {
       return 1;
     }
-    head = head.next;
+    current = current.next;
     if (next.next === null) {
       return 0;
     }

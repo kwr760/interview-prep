@@ -34,10 +34,10 @@ function printDoublyLinkedList(node) {
 }
 
 function reverse(llist) {
-  let head = llist, rev;
-  while (head !== null) {
-    rev = head;
-    head = head.next;
+  let current = llist, rev;
+  while (current !== null) {
+    rev = current;
+    current = current.next;
     [rev.prev, rev.next] = [rev.next, rev.prev];
   }
   return rev;
