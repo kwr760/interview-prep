@@ -1,3 +1,5 @@
+// https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1/
+
 export const solution = (arr, N, K) => {
   const binary = (search, beg, end, key) => {
     let index = Math.floor(beg + (end - beg)/2);

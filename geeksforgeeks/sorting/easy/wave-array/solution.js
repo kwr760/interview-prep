@@ -1,3 +1,5 @@
+// https://practice.geeksforgeeks.org/problems/wave-array-1587115621/1
+
 export const solution = (arr, n) => {
   const swap = (arr, i, j) => {
     const temp = arr[i];

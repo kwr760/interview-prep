@@ -1,3 +1,5 @@
+// https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1
+
 export const solution = (arr, len) => {
   const pos = [];
   const neg = [];

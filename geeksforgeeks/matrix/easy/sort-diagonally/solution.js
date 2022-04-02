@@ -1,3 +1,5 @@
+// https://practice.geeksforgeeks.org/problems/diagonal-morning-assembly0028/1/
+
 export const solution = (matrix, n, m) => {
   const getDiagonal = (x, y, max) => {
     const diagonal = [];
