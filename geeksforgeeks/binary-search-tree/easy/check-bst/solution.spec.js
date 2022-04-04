@@ -26,4 +26,18 @@ describe('test name', () => {
     // Assert
     expect(result).toEqual(expected);
   });
+  //
+  it('test 3', () => {
+    // Arrange
+    const str = '10 5 18 2 9 15 19 N 4 8 N 1';
+    const root = buildTree(str);
+    const expected = false;
+
+    // Act
+    const result = solution(root);
+
+    // Assert
+    expect(result).toEqual(expected);
+  });
+
 });
